@@ -37,8 +37,12 @@ print(bronn.greet(arya))
 print(jon.greet(bronn))
 
 # should be able to create a monster instance
-night_king = Monster("Night King", "nk.png")
+night_king = Monster("The Night King", "nk.png")
 
 # Monster and Hero should be able to greet eachother
 print(night_king.greet(bronn))
 print(bronn.greet(night_king))
+
+# Monster should be able to growl at nothing or at someone
+print(night_king.rawr())
+print(night_king.rawr(jon))

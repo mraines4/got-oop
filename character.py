@@ -35,4 +35,8 @@ class Hero(Character):
     pass
 
 class Monster(Character):
-    pass
+    def rawr(self, someone=None):
+        if someone:
+            return "Rawr. I am %s and I am a scary monster. Fear me %s." % (self.name, someone.name)
+        else:
+            return "Rawr. I am %s and I am a scary monster. Fear me." % (self.name,)
